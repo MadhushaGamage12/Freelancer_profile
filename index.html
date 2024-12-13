@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		  <meta charset="UTF-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <title>Freelancer Profile</title>
+		  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="layout-container">
+   
+<!-- Sidebar -->
+		<aside class="sidebar">
+		  <h2>Dashboard</h2>
+		  <ul>
+			<li><a href="#">Profile</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">Settings</a></li>
+			<li><a href="#">Logout</a></li>
+		  </ul>
+		</aside>
+
+<!-- Main Content -->
+    <main class="main-content">
+		  <button class="edit-profile-btn">Edit Profile</button>
+		  <div class="profile-container">
+		  <div class="profile-header">
+<!-- Profile Picture Upload -->
+          <div class="profile-pic-container">
+            <label for="uploadPicInput" class="upload-pic-label">
+              <img src="placeholder.jpg" alt="Profile Picture" id="uploadedPicture" class="profile-pic">
+            </label>
+            <input type="file" id="uploadPicInput" accept="image/*" hidden>
+          </div>
+
+<!-- Name and Category -->
+          <div class="profile-basic-info">
+            <h1 id="displayName"> name</h1>
+            <p id="displayCategory">Category<p>
+          </div>
+        </div>
+<hr><br><br>
+<!-- Additional Info -->
+        <div class="profile-details">
+          <div class="info-column">
+            <p><strong>Location:</strong> <span id="displayLocation">Location</span></p>
+            <p><strong>Occupation:</strong> <span id="displayOccupation">Occupation</span></p>
+            <p><strong>Email:</strong> <span id="displayEmail">Email</span></p>
+          </div>
+		  <hr>
+          <div class="info-column">
+            <p><strong>Availability:</strong> <span id="displayAvailability">Availabilitye</span></p>
+            <p><strong>Phone:</strong> <span id="displayPhone">Phone</span></p>
+          </div>
+        </div>
+		
+<hr>
+<br>
+<!-- Assigned Projects Section -->
+        <div class="assigned-projects">
+          <h3>Assigned Projects</h3>
+          
+        </div>
+<br>
+<hr><hr>
+<br>
+<!-- Feedback Section -->
+        <div class="feedback-section">
+          <h3>Feedback</h3>
+          <textarea id="feedbackInput" placeholder="Enter your feedback here...."> 
+		  </textarea>
+		  
+          <button id="submitFeedbackBtn">Submit here.</button>
+        </div>
+      
+	  </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
